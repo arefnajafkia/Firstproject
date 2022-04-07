@@ -1,3 +1,11 @@
-body{
-    background-color: tan;
+body {
+    background-color:  tan ;
+}
+
+#items{
+    color:black;
+}
+
+.items{
+    font-size: 3.6rem;
 }
