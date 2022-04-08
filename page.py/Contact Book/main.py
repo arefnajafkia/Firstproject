@@ -1,4 +1,4 @@
-#barname phone ba save and delet and bacgrand meshge
+
 from logging import root
 from tkinter import messagebox
 from tkinter import *
@@ -43,7 +43,7 @@ def delete_contact():
 def save_list():
     """ Save the list to a simple txt file """
             
-    with open('D:\Visual Studio\MyProject\page.py\Contact Book\saved.txt','w') as  f:
+    with open('D:\Visual Studio\MYPROJECT\Contact Book\saved.txt','w') as  f:
           list_tuple = listbox.get(0, END)
           for item in list_tuple:
                if item.endswith('\n'):
@@ -51,11 +51,11 @@ def save_list():
                else:
                     f.write(item+'\n')
 def open_list():
-        with open('D:\Visual Studio\MyProject\page.py\Contact Book\saved.txt','r') as  f:
+        with open('D:\Visual Studio\MYPROJECT\Contact Book\saved.txt','r') as  f:
             for line in f:
                 listbox.insert(END, line)
 def open_dir():
-        webbrowser.open('D:\Visual Studio\MyProject\page.py\Contact Book')  
+        webbrowser.open('D:\Visual Studio\MYPROJECT\Contact Book')  
 
 def copy_number():
         selected_contact = listbox.get(ANCHOR)
