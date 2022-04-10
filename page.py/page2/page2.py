@@ -1,3 +1,8 @@
+# من يک رباتم 
+print  ( ' من يک رباظ هستم واسم من دلاوراست ')
+print (' I am a robot , My name is Delavar .')
+
+print ('*'*35)
 #درج تاريخ ميلادي 
 import datetime
 now = datetime.datetime.today()
@@ -9,15 +14,33 @@ mi = str(now.minute)
 ss = str(now.second)
 print (mm + "/" + dd + "/" + yyyy + " " + hour + ":" + mi + ":" + ss)
 
-print ('-'*15)
+print ('-'*20)
 
 # نوشتن تاربخ به ماه وسال وساعت
 import datetime as dt
 today_date = dt.date.today()
 print(today_date.strftime("The Current Date is :\n\n%A %B %d, %Y"))
+print ('-'*20)
 
-print ('^'*15)
+print ('^$^'*20)
 
+ #با گرفتن تاريخ و تولد ميکيم چند سالشه
+
+name = input ("  نام ونام خانوادگي شما please enter your name : ")
+
+birth_year = input ("متولد چه سالي هستي birth year: ")
+age = 1401 - int (birth_year)
+city = input (" متولد کدام شهريد Born in which city :")
+print('='*30)
+
+print ( '!هستيد',city,'شما',age,'داريد وازشهر',name,'خوش آمديد')
+print ( "Welcome ",name, "you are" ,age, "years old  and You were born in  " ,city , "!" )
+
+print('='*30)
+
+#==============================================================#
+# تااینجا درپایتون نوشته شده ازاین به بعد باید درست بشه #
+#==============================================================#
 # پرسيدن اسم
 print ('نام ونام خانوادگي ')
 x = input('Enter your name:')
