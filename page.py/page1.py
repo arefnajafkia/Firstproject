@@ -71,23 +71,25 @@ print ( 'لطفا يک شماره از1تا 1000 انتخاب کن وبمن نگ
 print ("من ميپرسم تابتونم شماره روپيداکنم\nI'm asking for your Rupid number")
 
 print("\n"*1)
+#برنامه نوشته شده براي پيداکردن عدد انتخابي
+#Written program to find the selected number
 from math import floor
 
 def IsGuessTrue(Min, Max, Guess, NoGuess):
     if Min == Max :
         return
     else:
-        OP = input ("Is your number (E)qual to ,(G)reater than or (L)ess than %i: " % Guess )
+        OP = input ("Is your number (E)اگرخودش بود بنويس\nqual to ,(B)اگربزرگتربود بنويس\nreater than or (K)اگرکوچکتربودبنويس\ness than %i: " % Guess )
         if (OP == 'E' or OP == 'e'):
             print ("I found your number in %i Guess , it is %i"% (NoGuess, Guess))
             Max = Min
             IsGuessTrue(Min, Max, Guess, NoGuess)
-        elif (OP == 'G' or OP == 'g'):
+        elif (OP == 'B' or OP == 'b'):
             Min = Guess
             Guess = floor ((Min + Max)/2)
             NoGuess += 1
             IsGuessTrue(Min, Max, Guess, NoGuess)
-        elif (OP == 'L' or OP == 'l'):
+        elif (OP == 'K' or OP == 'k'):
             Max = Guess
             Guess = floor ((Min + Max)/2)
             NoGuess += 1
@@ -102,3 +104,7 @@ Max = 1000
 Guess = floor ((Min + Max)/2)
 NoGuess = 1
 IsGuessTrue(Min, Max, Guess, NoGuess)
+
+print("\n"*1)
+print ("ممنون که وقتتون روبمن داديد\nThank you for your time, Robman !")
+
