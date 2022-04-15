@@ -10,12 +10,12 @@ def IsGuessTrue (Min, Max ,Guess ,NoGuess):
             IsGuessTrue(Min, Max, Guess, NoGuess)
         elif (OP == 'G' or OP == 'g'):
             Min = Guess
-            Guess = floor (Min + Max)/2)
+            Guess = floor ((Min + Max)/2)
             NoGuess += 1
             IsGuessTrue(Min, Max, Guess, NoGuess)
         elif (OP == 'L' or OP == 'l'):
             Max = Guess
-            Guess = floor (Min + Max)/2)
+            Guess = floor ((Min + Max)/2)
             NoGuess += 1
             IsGuessTrue(Min, Max, Guess, NoGuess)
         else:
@@ -25,7 +25,7 @@ def IsGuessTrue (Min, Max ,Guess ,NoGuess):
 Numbers = [ x for x in range(1001)]
 Min = 1
 Max = 1000
-Guess = floor (Min + Max)/2)
+Guess = floor((Min + Max)/2)
 NoGuess = 1
 IsGuessTrue(Min, Max, Guess, NoGuess)
    
