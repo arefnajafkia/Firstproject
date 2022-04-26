@@ -1,8 +1,9 @@
+
 # من يک رباتم 
 print  ( ' من يک رياط هستم واسمم پايتون9 است ')
 print (' I am a robot , My name is python 9 .')
 
-print("\n"*1)
+print()
 print ("ساعت وتاريخ امروز\nTime and date")
 print("-"*20)
 
@@ -24,10 +25,10 @@ today_date = dt.date.today()
 print(today_date.strftime("The Current Date is :\n\n%A %B %d, %Y"))
 
 print ('-'*20)
-print("\n"*1)
+print()
 
 print ('ميتونم چندتاسوال ازشمابپرسم؟\nHow many questions can I ask you?')
-print("\n"*1)
+print()
 g = input ( "شمامردهستيد يازن؟ What is your gender, Mr.or Mrs.?")
 name = input ("  نام ونام خانوادگي شما please enter your name : ")
 city = input (" متولد کدام شهريد Born in which city :")
@@ -51,10 +52,10 @@ end = ['st' ,  'nd' ,  'rd'] + 17*['th'] + [ 'st' , 'nd' , 'rd'] +7 * ['th'] + [
 
 m_index = M-1
 d_index = D-1
-print("\n"*1)
+print()
 print ( Y,'شمامتولد',D,Month_farse [m_index] ,'')
 print ('You were born ' ,D, end[d_index] ,   ' ' ,  Month [m_index] ,   ' ' ,  Y )
-print("\n"*1)
+print()
 # sen karbar ra migirad and tarikh tavalod ra mydahad
 #import datetime
 #now = datetime.datetime.now()
@@ -64,13 +65,19 @@ print (year_born,"شمامتولدشديددرسال ميلادي",)
 print("Awesome! you were born in ", year_born)
 
 print('-'*30)
-print("\n"*1)
+print()
+
+#درآخرتايم بازي رامينويسد
+import time
+start = time.time()
+
+#شروي بازي 
 print ("بياباهم بازي اعدادکنيم\nLet's play numbers together")
-print("\n"*1)
+print()
 print ( 'لطفا يک شماره از1تا 1000 انتخاب کن وبمن نگو\nPlease select a number from 1 to 1000 and do not say')
 print ("من ميپرسم تابتونم شماره روپيداکنم\nI'm asking for your Rupid number")
 
-print("\n"*1)
+print()
 #برنامه نوشته شده براي پيداکردن عدد انتخابي
 #Written program to find the selected number
 from math import floor
@@ -79,7 +86,7 @@ def IsGuessTrue(Min, Max, Guess, NoGuess):
     if Min == Max :
         return
     else:
-        OP = input ("Is your number (E)اگرخودش بود بنويس\nqual to ,(B)اگربزرگتربود بنويس\nreater than or (K)اگرکوچکتربودبنويس\ness than %i: " % Guess )
+        OP = input ("Is your number (E)اگرخودش بود بنويس\nqual to ,(B)اگربزرگتربود بنويس\nreater than or (K)اگرکوچکتربودبنويسess than %i: " % Guess )
         if (OP == 'E' or OP == 'e'):
             print ("I found your number in %i Guess , it is %i"% (NoGuess, Guess))
             Max = Min
@@ -105,6 +112,10 @@ Guess = floor ((Min + Max)/2)
 NoGuess = 1
 IsGuessTrue(Min, Max, Guess, NoGuess)
 
-print("\n"*1)
+print()
 print ("ممنون که وقتتون روبمن داديد\nThank you for your time, Robman !")
 
+print()
+
+#تايم بازي راپرينت ميکند
+print("زمان بازي شما\nRun Time: " + str( time.time() - start ))
