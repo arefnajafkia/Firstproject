@@ -1,4 +1,3 @@
-
 # من يک رباتم 
 print  ( ' من يک رياط هستم واسمم پايتون9 است ')
 print (' I am a robot , My name is python 9 .')
@@ -31,7 +30,7 @@ print ('ميتونم چندتاسوال ازشمابپرسم؟\nHow many questio
 print()
 g = input ( "شمامردهستيد يازن؟ What is your gender, Mr.or Mrs.?")
 name = input ("  نام ونام خانوادگي شما please enter your name : ")
-city = input (" متولد کدام شهريد Born in which city :")
+city = input (' متولد کدام شهريد Born in which city {}.{}:'.format(g,name))
 birth_year = input ("متولد چه سالي هستي birth year: ")
 
 age = 1401 - int (birth_year)
@@ -72,7 +71,7 @@ import time
 start = time.time()
 
 #شروي بازي 
-print ("بياباهم بازي اعدادکنيم\nLet's play numbers together")
+print ("بياباهم بازي اعدادکنيم\nLet's play numbers together {}.{}".format(g,name))
 print()
 print ( 'لطفا يک شماره از1تا 1000 انتخاب کن وبمن نگو\nPlease select a number from 1 to 1000 and do not say')
 print ("من ميپرسم تابتونم شماره روپيداکنم\nI'm asking for your Rupid number")
@@ -113,9 +112,9 @@ NoGuess = 1
 IsGuessTrue(Min, Max, Guess, NoGuess)
 
 print()
-print ("ممنون که وقتتون روبمن داديد\nThank you for your time, Robman !")
+print ("ممنون که وقتتون روبمن داديد\nThank you for your time, {}.{} !".format(g,name))
 
 print()
-
 #تايم بازي راپرينت ميکند
 print("زمان بازي شما\nRun Time: " + str( time.time() - start ))
+
